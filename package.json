@@ -1,0 +1,41 @@
+{
+  "name": "v1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "npx tsc && npm link",
+    "lint": "npx eslint .",
+    "dev": "npx ts-node src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^20.14.9",
+    "ansi-colors": "^4.1.3",
+    "@tools/serff/aws": "^1.0.0",
+    "aws4": "^1.13.0",
+    "colors": "^1.4.0",
+    "commander": "^12.1.0",
+    "dayjs": "^1.11.11",
+    "figlet": "^1.7.0",
+    "inquirer": "^8.2.6",
+    "joi": "^17.13.3",
+    "mongodb": "^6.8.0",
+    "mongoose": "^7.7.0",
+    "ora": "^5.4.1",
+    "ts-morph": "^23.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^4",
+    "typescript-eslint": "^7.15.0"
+  },
+  "bin": {
+    "serff": "dist/index.js"
+  },
+  "devDependencies": {
+    "@types/figlet": "^1.5.8",
+    "@types/inquirer": "^9.0.7"
+  }
+}
